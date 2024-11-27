@@ -1,56 +1,12 @@
-# :zap: Handwriting Transformers  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo.ipynb)
-<!-- 
-[arXiv](https://arxiv.org/abs/2112.10752) | [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Bhunia_Handwriting_Transformers_ICCV_2021_paper.pdf) | [Huggingface-demo](https://huggingface.co/spaces/ankankbhunia/HWT) | [Colab-demo](https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo.ipynb) | [BibTeX](#bibtex)
-  -->
-
-  
- <p align='center'>
-  <b>
-    <a href="https://ankanbhunia.github.io/Handwriting-Transformers/">Project</a>
-    |
-    <a href="https://arxiv.org/abs/2104.03964">ArXiv</a>
-    | 
-    <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Bhunia_Handwriting_Transformers_ICCV_2021_paper.pdf">Paper</a>
-    | 
-    <a href="https://ankankbhunia-hwt.hf.space/">Huggingface-demo</a>
-    | 
-    <a href="https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo.ipynb">Colab-demo</a>
-  </b>
-</p> 
-
+#  Handwriting Transformers  
  
  <p align="center">
 <img src=Figures/mainfigure.jpg width="500"/>
 </p>
 
 
-## News
-
-- **2024.02** Test the model using custom handwriting samples:
-
--
-  :rocket:
-  [A Huggingface demo is now available and running](https://huggingface.co/spaces/ankankbhunia/HWT)
-- 
-  :rocket:
-  [Colab demo for custom handwritings](https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo_custom_handwriting.ipynb)
-- 
-  :rocket:
-  [Colab demo for IAM/CVL dataset](https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo.ipynb)
-
-<!-- 
-<img src="Figures/Result.gif" width="800"/>
- -->
 
 
- ## Abstract
- 
-[Ankan Kumar Bhunia](https://scholar.google.com/citations?user=2leAc3AAAAAJ&hl=en),
-[Salman Khan](https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en),
-[Hisham Cholakkal](https://scholar.google.com/citations?user=bZ3YBRcAAAAJ&hl=en), 
-[Rao Muhammad Anwer](https://scholar.google.fi/citations?user=_KlvMVoAAAAJ&hl=en),
-[Fahad Shahbaz Khan](https://scholar.google.ch/citations?user=zvaeYnUAAAAJ&hl=en&oi=ao) &
-[Mubarak Shah](https://scholar.google.com/citations?user=p8gsO3gAAAAJ&hl=en)
 
 
 > **Abstract:** 
@@ -94,15 +50,10 @@ You can train the model in any custom dataset other than IAM and CVL. The proces
 'test': [{writer_3:[{'img': <PIL.IMAGE>, 'label':<str_label>},...]}, {writer_4:[{'img': <PIL.IMAGE>, 'label':<str_label>},...]},...], 
 }
 ```
- ## Run Demo using Docker
-```
- docker run -it -p 7860:7860 --platform=linux/amd64 \
-	registry.hf.space/ankankbhunia-hwt:latest python app.py
- ```
-
+ 
 ## Handwriting synthesis results
 
-Please check the ```results``` folder in the repository to see more qualitative analysis. Also, please check out colab demo to try with your own custom text and writing style [![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo.ipynb)
+Pipynb)
 
  <p align="center">
 <img src=Figures/paperresult.jpg width="1000"/>
@@ -129,18 +80,5 @@ the same text as in the style examples to generate handwritten images.
  -->
 
 
-## Citation
 
-If you use the code for your research, please cite our paper:
-
-```
-@InProceedings{Bhunia_2021_ICCV,
-    author    = {Bhunia, Ankan Kumar and Khan, Salman and Cholakkal, Hisham and Anwer, Rao Muhammad and Khan, Fahad Shahbaz and Shah, Mubarak},
-    title     = {Handwriting Transformers},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2021},
-    pages     = {1086-1094}
-}
-```
 
