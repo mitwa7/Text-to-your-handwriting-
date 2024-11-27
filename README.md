@@ -43,7 +43,6 @@ You can train the model in any custom dataset other than IAM and CVL. The proces
  
 ## Handwriting synthesis results
 
-Pipynb)
 
  <p align="center">
 <img src=Figures/paperresult.jpg width="1000"/>
